@@ -199,7 +199,7 @@ export default class extends think.model.base {
 
 ```js
 export default class extends think.model.base {
-  getMin(){
+  getMax(){
     //查询 status 为 publish，字段 comments 的最大值
     return this.where({status: 'publish'}).max('comments');
   }
